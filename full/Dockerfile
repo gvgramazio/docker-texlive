@@ -6,7 +6,7 @@ LABEL mantainer="gvgramazio@gmail.com" \
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Install texlive-full
-RUN apt-get update \
+RUN apt-get update --no-install-recommends \
   && apt-get install -y \
     texlive-full
 
