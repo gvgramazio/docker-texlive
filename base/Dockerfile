@@ -8,7 +8,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Install texlive-base
 RUN apt-get update --no-install-recommends \
   && apt-get install -y \
-    texlive-base \
+    texlive-base=2017.20180305-1 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
